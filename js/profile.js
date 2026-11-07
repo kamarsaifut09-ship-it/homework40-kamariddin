@@ -27,7 +27,7 @@ async function loadProfile() {
   const token = getAccessToken();
 
   if (!token) {
-    window.location.replace("login.html");
+    window.location.replace("index.html");
     return;
   }
 
