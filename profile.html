@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой профиль</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="profile-wrapper">
+    <header class="profile-top">
+      <a class="brand" href="profile.html"><span class="brand-mark small">JWT</span> MY ACCOUNT</a>
+      <button class="logout-button" id="logout-button" type="button">Выйти <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <section class="profile-heading">
+      <p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p>
+      <h1>Мой профиль</h1>
+      <p class="muted">Данные загружены с защищённого API-запроса.</p>
+    </section>
+
+    <section class="profile-card" id="profile-content">
+      <div class="loading">Загрузка...</div>
+    </section>
+    <p class="security-note"><span class="status-dot"></span> Защищённое соединение с помощью Bearer Token</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/profile.js"></script>
+</body>
+</html>
