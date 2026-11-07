@@ -7,7 +7,7 @@ function showProfile(user) {
   const fullName = [user.firstName, user.lastName].filter(Boolean).join(" ");
   profileContent.innerHTML = `
     <div class="user-photo-wrap">
-      <img class="user-photo" src="${user.image}" alt="Фото профиля">
+      <img class="user-photo" src="public/images/jamal.jpg" alt="Фото профиля">
       <span class="online-indicator"></span>
     </div>
     <div class="user-info">
