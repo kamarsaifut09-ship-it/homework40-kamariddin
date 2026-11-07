@@ -20,7 +20,7 @@ function clearTokens() {
 
 function logout() {
   clearTokens();
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 // Повторяем запрос профиля после успешного обновления access-токена.
